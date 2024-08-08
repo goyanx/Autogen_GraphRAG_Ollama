@@ -57,7 +57,8 @@ Follow these steps to set up and run AutoGen GraphRAG Local with Ollama and Chai
     ```         
 6. **Start Lite-LLM proxy server:**
     ```bash
-    litellm --model ollama_chat/llama3
+    #litellm --model ollama_chat/llama3
+    litellm --config litellm_config.yaml --api_base http://localhost:11434
     ```    
 7. **Run app:**
     ```bash
